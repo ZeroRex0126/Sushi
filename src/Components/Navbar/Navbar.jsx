@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
-      <Link className="navbar-brand navbar-logo" to="/" >
+      <Link className="navbar-brand navbar-logo" to="/">
         KOI SUSHI
       </Link>
 
@@ -18,7 +18,7 @@ const Navbar = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <i className="fas fa-bars text-white"></i>
+        <i className="fas fa-bars"></i>
       </div>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,20 +29,20 @@ const Navbar = () => {
           </div>
 
           <li className="nav-item">
-            <Link className="nav-link" to="/" >
+            <NavLink className="nav-link" to="/">
               <i className="fas fa-home"></i>Home
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link" to="/Menu" >
+            <NavLink className="nav-link" to="/Menu">
               <i className="far fa-address-book"></i>Menu
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/ContactUs" >
+            <NavLink className="nav-link" to="/ContactUs">
               <i className="far fa-copy"></i>Contact Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
