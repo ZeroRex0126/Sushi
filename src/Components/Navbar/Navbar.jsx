@@ -8,7 +8,6 @@ const Navbar = () => {
       <Link className="navbar-brand navbar-logo" to="/">
         KOI SUSHI
       </Link>
-
       <div
         className="navbar-toggler"
         type="button"
@@ -30,18 +29,23 @@ const Navbar = () => {
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/">
-              <i className="fas fa-home"></i>Home
+              Home
             </NavLink>
           </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/Menu">
-              <i className="far fa-address-book"></i>Menu
+              Menu
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/about">
+              About Us
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/ContactUs">
-              <i className="far fa-copy"></i>Contact Us
+              Contact Us
             </NavLink>
           </li>
         </ul>

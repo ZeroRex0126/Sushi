@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection></HeroSection>
-      <Details></Details>
+      <HeroSection></HeroSection>
     </div>
   );
 };

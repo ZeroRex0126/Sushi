@@ -1,4 +1,90 @@
 .HeroContainer {
-  background-color: peachpuff;
+  background-color: white;
   height: 100vh;
+}
+
+.hero-heading {
+  font-family: "Vampiro One", cursive;
+  display: flex;
+  position: absolute;
+  font-size: 100px;
+  margin-left: 10%;
+}
+
+.heading-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  align-items: center;
+}
+
+.HeroContainer .background {
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.HeroContainer .sushi-img-container {
+  z-index: 10;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  position: absolute;
+  top: 20%;
+  right: 12%;
+  border-radius: 40%;
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.splash-img {
+  display: flex;
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  width: 800px;
+  height: 800px;
+}
+
+.animated-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  content: "";
+  position: absolute;
+  margin: auto;
+  animation: 3s updown infinite ease;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg) scale(1);
+  }
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: 4%;
+  }
 }
