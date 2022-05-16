@@ -4,7 +4,7 @@ import { Details, HeroSection } from "../Components";
 const HomePage = () => {
   return (
     <div>
-      <HeroSection></HeroSection>
+      <HeroSection />
     </div>
   );
 };

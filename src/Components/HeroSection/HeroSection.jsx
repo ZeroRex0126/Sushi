@@ -13,9 +13,11 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="heading-container">
-        <h1 className="hero-heading">Time for sushi</h1>
-        <button className="menu-btn">Menu</button>
+      <div className="details-container">
+        <div className="heading-container">
+          <h1 className="hero-heading">Time for sushi</h1>
+          <button className="menu-btn">Menu</button>
+        </div>
       </div>
     </div>
   );
