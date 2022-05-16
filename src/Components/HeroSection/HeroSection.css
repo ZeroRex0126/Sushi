@@ -41,8 +41,8 @@
 }
 
 .HeroContainer .sushi-img-stamp-animation {
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   display: flex;
   position: absolute;
   /* top: 20%; */
@@ -59,8 +59,8 @@
   position: absolute;
   top: -15%;
   right: -10%;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
 }
 
 .animated-img {
@@ -182,18 +182,6 @@
 @media (max-width: 1055px) {
   .hero-heading {
     font-size: 50px !important;
-  }
-
-  .HeroContainer .sushi-img-stamp-animation {
-    width: 400px;
-    height: 400px;
-    /* top: 30%; */
-    right: 8%;
-  }
-
-  .splash-img {
-    width: 500px;
-    height: 500px;
   }
 }
 
