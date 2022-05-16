@@ -6,6 +6,7 @@ import { ContactUsPage, MenuPage, HomePage, About } from "./Pages";
 function App() {
   return (
     <>
+      <img src="/img/waves.png" alt="" className="background" />
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>

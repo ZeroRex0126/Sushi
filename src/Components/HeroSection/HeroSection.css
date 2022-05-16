@@ -1,17 +1,34 @@
 .HeroContainer {
-  background-color: white;
   height: 100vh;
 }
 
 .hero-heading {
   font-family: "Vampiro One", cursive;
-  display: flex;
-  position: absolute;
-  font-size: 100px;
-  margin-left: 10%;
+  /* display: flex;
+  position: absolute; */
+  font-size: 90px;
+  left: 10%;
+  align-items: center;
+  transform: translate(10%, 0%);
 }
 
-.heading-container,
+.menu-btn {
+  max-width: 90px;
+  height: 40px;
+  margin-left: 50%;
+  align-items: center;
+}
+
+.heading-container {
+  position: absolute;
+  height: 100px;
+  /* width: 50vw; */
+  display: grid;
+  align-items: center;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
 .sushi-img-container {
   height: 100vh;
   width: 100vw;
@@ -19,29 +36,20 @@
   position: absolute;
   background-color: transparent;
   align-items: center;
-}
-
-.HeroContainer .background {
-  opacity: 0.5;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  z-index: 0;
+  overflow: hidden;
 }
 
 .HeroContainer .sushi-img-stamp-animation {
-  z-index: 10;
   width: 600px;
   height: 600px;
   display: flex;
   position: absolute;
-  top: 20%;
+  /* top: 20%; */
   right: 12%;
   border-radius: 40%;
   animation-name: pulse;
   animation-duration: 0.5s;
-  opacity: 0;
+  opacity: 1;
   animation-fill-mode: forwards;
 }
 
@@ -50,8 +58,8 @@
   position: absolute;
   top: -15%;
   right: -10%;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
 }
 
 .animated-img {
@@ -64,13 +72,13 @@
   margin: auto;
   animation: 3s updown infinite ease;
 }
+
 @keyframes pulse {
   0% {
     opacity: 0;
   }
   10% {
     opacity: 0.5;
-    transform-origin: 50% 50%;
     transform: rotate(-2deg) scale(5);
     transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
   }
@@ -87,5 +95,87 @@
   }
   50% {
     top: 4%;
+  }
+}
+
+@media (min-width: 888px) {
+  .heading-container {
+    left: 8%;
+  }
+}
+
+@media (max-width: 888px) {
+  .sushi-img-stamp-animation {
+    right: 50% !important;
+    transform: rotate(-15deg) translate(50%, 0%) !important;
+  }
+  .heading-container {
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 80px;
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+
+  .menu-btn {
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media (max-width: 1055px) {
+  .hero-heading {
+    font-size: 50px !important;
+  }
+
+  .HeroContainer .sushi-img-stamp-animation {
+    width: 400px;
+    height: 400px;
+    /* top: 30%; */
+    right: 8%;
+  }
+
+  .splash-img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .hero-heading {
+    text-align: center;
+    font-size: 120px;
+  }
+
+  .menu-btn {
+    left: 50% !important;
+  }
+}
+
+@media (max-width: 1450px) {
+  .hero-heading {
+    font-size: 70px;
+  }
+
+  .HeroContainer .sushi-img-stamp-animation {
+    width: 500px;
+    height: 500px;
+    /* top: 30%; */
+  }
+
+  .splash-img {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 1807px) {
+  .hero-heading {
+    font-size: 70px;
   }
 }

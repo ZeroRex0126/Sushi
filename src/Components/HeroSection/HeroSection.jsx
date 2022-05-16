@@ -4,12 +4,6 @@ import "./HeroSection.css";
 const HeroSection = () => {
   return (
     <div className="HeroContainer">
-      <img src="/img/waves.png" alt="" className="background" />
-
-      <div className="heading-container">
-        <h1 className="hero-heading">Time for sushi</h1>
-      </div>
-
       <div className="sushi-img-container">
         <div className="sushi-img-stamp-animation">
           <img src="/img/splash.png" alt="" className="splash-img" />
@@ -17,6 +11,11 @@ const HeroSection = () => {
             <img src="/img/sushi.png" alt="" className="sushi-img" />
           </div>
         </div>
+      </div>
+
+      <div className="heading-container">
+        <h1 className="hero-heading">Time for sushi</h1>
+        <button className="menu-btn">Menu</button>
       </div>
     </div>
   );
