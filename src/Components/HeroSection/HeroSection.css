@@ -18,15 +18,20 @@
   /* display: flex;
   position: absolute; */
   font-size: 90px;
-  left: 10%;
+  width: 100%;
+  margin-left: 50%;
   align-items: center;
-  transform: translate(10%, 0%);
+  transform: translate(-50%, 0%);
 }
 
-.menu-btn {
-  max-width: 90px;
-  height: 40px;
+.hero-btn {
+  height: 50px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 5px;
   margin-left: 50%;
+  transform: translate(-50%, 0%);
   align-items: center;
 }
 
@@ -113,10 +118,21 @@
     top: 4%;
   }
 }
+@media (max-height: 376px) and (max-width: 670px) {
+  .heading-container {
+    top: 50% !important;
+  }
+}
+
+@media (max-height: 680px) {
+  .heading-container {
+    top: 70% !important;
+  }
+}
 
 @media (min-height: 450px) {
   .sushi-img-stamp-animation {
-    top: 20%;
+    top: 30%;
   }
 }
 
@@ -160,12 +176,9 @@
 
   .hero-heading {
     font-size: 80px;
-
-    left: 0;
-    transform: translate(0%, 0%);
   }
 
-  .menu-btn {
+  .hero-btn {
     transform: translate(-50%, 0%);
   }
 
@@ -191,14 +204,14 @@
     font-size: 120px;
   }
 
-  .menu-btn {
+  .hero-btn {
     left: 50% !important;
   }
 }
 
 @media (max-width: 1450px) {
   .hero-heading {
-    font-size: 70px;
+    /* font-size: 70px !important; */
   }
 
   .HeroContainer .sushi-img-stamp-animation {
@@ -215,6 +228,6 @@
 
 @media (max-width: 1807px) {
   .hero-heading {
-    font-size: 70px;
+    font-size: 90px;
   }
 }

@@ -1,0 +1,70 @@
+.animatedBtn a {
+  position: relative;
+  background: white;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.animatedBtn a:hover {
+  background-color: var(--btn-color);
+  box-shadow: 0 0 35px var(--btn-color);
+  color: var(--btn-color);
+  letter-spacing: 0.25em;
+}
+
+.animatedBtn a::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: black;
+}
+
+.animatedBtn a span {
+  position: relative;
+  z-index: 1;
+}
+
+.animatedBtn a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.animatedBtn a i::before,
+i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.animatedBtn a i::before {
+  top: 0%;
+  left: 80%;
+}
+
+.animatedBtn a:hover i::before {
+  width: 20px;
+  left: 20%;
+  background: black;
+}
+
+.animatedBtn a i::after {
+  bottom: 0%;
+  left: 20%;
+}
+
+.animatedBtn a:hover i::after {
+  width: 20px;
+  left: 80%;
+  background: black;
+}

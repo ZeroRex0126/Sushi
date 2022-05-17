@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import AnimatedBtn from "../animatedBtn/animatedBtn";
 
 const HeroSection = () => {
   return (
@@ -16,7 +17,20 @@ const HeroSection = () => {
       <div className="details-container">
         <div className="heading-container">
           <h1 className="hero-heading">Time for sushi</h1>
-          <button className="menu-btn">Menu</button>
+          <div className="hero-btn">
+            <AnimatedBtn
+              navTo={"menu"}
+              title={"menu"}
+              color={{ "--btn-color": "green" }}
+            />
+          </div>
+          <div className="hero-btn">
+            <AnimatedBtn
+              navTo={"ContactUs"}
+              title={"contact us"}
+              color={{ "--btn-color": "green" }}
+            />
+          </div>
         </div>
       </div>
     </div>
