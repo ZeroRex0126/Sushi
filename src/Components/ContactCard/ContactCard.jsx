@@ -1,4 +1,4 @@
-import { Button, Grid, TextField } from "@material-ui/core";
+import { Grid, TextField } from "@material-ui/core";
 import { Typography } from "@mui/material";
 import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
@@ -18,7 +18,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
       <div className="h-divider">
         <div className="shadow"></div>
         <div className="text2">
-          <img src="/img/divider-img.png" />
+          <img src="/img/divider-img.png" alt="" />
         </div>
       </div>
       <Grid container className="contact-component-container">
@@ -141,9 +141,9 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
       </Grid>
       <div className="spacer-vertical left">
         <div className="mask text2">
-          <div className="vertical-bg">
+          {/* <div className="vertical-bg">
             <img src="/img/divider-img.png" />
-          </div>
+          </div> */}
         </div>
       </div>
     </main>

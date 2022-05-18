@@ -48,5 +48,5 @@
 .navbar-nav {
   display: flex;
   width: 95%;
-  place-content: end !important;
+  place-content: flex-end !important;
 }
