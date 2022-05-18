@@ -19,3 +19,11 @@
 * {
   z-index: 1;
 }
+
+/*Input label color*/
+.MuiInput-underline:after {
+  border-bottom: 2px solid green !important;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: green !important;
+}

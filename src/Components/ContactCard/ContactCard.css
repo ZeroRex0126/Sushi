@@ -101,6 +101,11 @@
 }
 
 @media screen and (max-width: 959px) {
+  .contact-component-container {
+    top: 120px;
+    padding-bottom: 10vh;
+    transform: translate(0%, 0%);
+  }
   .spacer-vertical {
     display: none;
   }
@@ -120,7 +125,7 @@
   .h-divider {
     display: block;
     margin: auto;
-    margin-top: 10vh;
+    top: 115px;
     width: 80%;
     position: relative;
   }
