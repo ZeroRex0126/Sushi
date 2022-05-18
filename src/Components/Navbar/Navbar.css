@@ -29,6 +29,7 @@
 
 .navbar-toggler {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .nav-link,
