@@ -14,7 +14,8 @@
   z-index: 1000;
 }
 
-.navbar-logo {
+.nav-item .active {
+  color: green !important;
 }
 
 /* .nav-link.active {
@@ -49,4 +50,14 @@
   display: flex;
   width: 95%;
   place-content: flex-end !important;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:hover {
+  color: green;
+  animation: 0.3s miniJump ease;
+  filter: blur(0.2px);
 }

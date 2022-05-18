@@ -19,24 +19,6 @@
   filter: blur(0.5px);
 }
 
-@keyframes jumpLetter {
-  0% {
-    top: 0px;
-  }
-  25% {
-    top: 10px;
-  }
-  50% {
-    top: -20px;
-  }
-  75% {
-    top: 10px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
 @media (max-width: 888px) {
   .animated-heading {
     font-size: 80px;

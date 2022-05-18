@@ -27,3 +27,73 @@
 .MuiFormLabel-root.Mui-focused {
   color: green !important;
 }
+
+@keyframes jumpLetter {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: -20px;
+  }
+  75% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes miniJump {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -4px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+    transform: rotate(-2deg) scale(5);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg) scale(1);
+  }
+}
+
+@keyframes pulse-mini {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+    transform: rotate(-2deg) scale(5) translate(50%, 0%);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg) scale(1) translate(50%, 0%);
+  }
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: 4%;
+  }
+}
