@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./messageDialog.css";
+import AnimatedBtn from "../../animatedBtn/animatedBtn";
 
 function messageDialog({
   message,
@@ -42,15 +43,13 @@ function messageDialog({
               {buttonMessage}
             </Button>
           ) : (
-            <Button
-              onClick={() => onDialog(true, item, "messageOk")}
+            <AnimatedBtn
+              title={buttonMessage}
+              isBtn={true}
+              clickFunc={() => onDialog(true, item, "messageOk")}
               id="messageOk"
-              variant="contained"
-              color="primary"
-              className="confirmation-btn yes-btn"
-            >
-              {buttonMessage}
-            </Button>
+              color={{ "--btn-color": "green" }}
+            />
           )}
         </div>
       </div>
