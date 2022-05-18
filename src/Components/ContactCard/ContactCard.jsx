@@ -18,7 +18,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
       <div className="h-divider">
         <div className="shadow"></div>
         <div className="text2">
-          <img src="https://t1.gstatic.com/images?q=tbn:ANd9GcQsmMfybMIwoE5etmOIAuvnFWdfv_8C1Bq15urJFqwhhI55FyYNP2YuUA" />
+          <img src="/img/divider-img.png" />
         </div>
       </div>
       <Grid container className="contact-component-container">
@@ -142,7 +142,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
       <div className="spacer-vertical left">
         <div className="mask text2">
           <div className="vertical-bg">
-            <img src="https://t1.gstatic.com/images?q=tbn:ANd9GcQsmMfybMIwoE5etmOIAuvnFWdfv_8C1Bq15urJFqwhhI55FyYNP2YuUA" />
+            <img src="/img/divider-img.png" />
           </div>
         </div>
       </div>

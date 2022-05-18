@@ -7,6 +7,12 @@
   text-align: center !important;
   align-items: center !important;
   width: 90% !important;
+  height: 100vh;
+}
+
+.spacer-vertical img,
+.h-divider img {
+  height: 61px !important;
 }
 
 .contact-profile-pic {
@@ -46,8 +52,9 @@
   display: inline-block;
   position: absolute;
   align-items: center;
-  top: 15%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mask {
   overflow: hidden;
@@ -73,7 +80,6 @@
   margin: 4px;
   max-width: 60px;
   border-radius: 100%;
-  border: 1px dashed #aaa;
 }
 .left .mask:after {
   content: "";
@@ -154,7 +160,6 @@
     bottom: 100%;
     margin-bottom: -33px;
     left: 50%;
-    margin-left: -60px;
     border-radius: 100%;
     box-shadow: 0 2px 4px #999;
     background: white;
@@ -192,6 +197,5 @@
     margin: 4px;
     max-width: 60px;
     border-radius: 100%;
-    border: 1px dashed #aaa;
   }
 }
