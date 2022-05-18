@@ -38,13 +38,9 @@
   height: 700px;
   display: flex;
   position: absolute;
-  /* top: 20%; */
   right: 12%;
   border-radius: 40%;
-  animation-name: pulse;
-  animation-duration: 0.5s;
-  opacity: 1;
-  animation-fill-mode: forwards;
+  animation: 0.5s pulse forwards;
 }
 
 .splash-img {
