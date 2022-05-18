@@ -1,10 +1,14 @@
 import React from "react";
 import { ContactCard } from "../Components";
 
-const ContactUsPage = () => {
+const ContactUsPage = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
   return (
     <div>
-      <ContactCard />
+      <ContactCard
+        sendEmail={sendEmail}
+        setMessageDialog={setMessageDialog}
+        closeMessageDialog={closeMessageDialog}
+      />
     </div>
   );
 };

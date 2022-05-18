@@ -4,3 +4,4 @@ export { default as Details } from "./Details/Details";
 export { default as AnimatedBtn } from "./animatedBtn/animatedBtn";
 export { default as AnimatedTitle } from "./AnimatedTitle/AnimatedTitle";
 export { default as ContactCard } from "./ContactCard/ContactCard";
+export { default as MessageDialog } from "./Dialogs/messageDialog/messageDialog";
