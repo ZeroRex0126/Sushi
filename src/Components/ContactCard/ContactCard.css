@@ -1,0 +1,192 @@
+.contact-component-container {
+  display: flex;
+  position: relative;
+  left: 5%;
+  top: 50vh;
+  transform: translate(0%, -50%);
+  text-align: center !important;
+  align-items: center !important;
+  width: 90% !important;
+}
+
+.contact-profile-pic {
+  object-fit: cover;
+  width: 60%;
+  position: fixed;
+  height: 75.5vh;
+  border-radius: 40px;
+  position: relative;
+}
+
+.contact-details {
+  padding: 20px 60px 2px 60px !important;
+}
+
+.contact-component-container h1 {
+  font-size: 25px;
+}
+.contact-component-container p {
+  font-size: 15px;
+}
+
+.h-divider {
+  display: none;
+}
+
+.contact-form {
+  overflow: hidden;
+  max-width: 40% !important;
+  padding-left: 10% !important;
+}
+
+/* vertical divider */
+
+.spacer-vertical {
+  display: inline-block;
+  position: absolute;
+  align-items: center;
+  top: 15%;
+  left: 50%;
+}
+.mask {
+  overflow: hidden;
+  width: 20px;
+  height: 600px;
+}
+
+.vertical-bg {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 40%;
+  left: -200%;
+  margin: 4px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+
+.mask img {
+  position: absolute;
+  left: 2%;
+  margin: 4px;
+  max-width: 60px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+}
+.left .mask:after {
+  content: "";
+  display: block;
+  margin-left: -20px;
+  width: 20px;
+  height: 100%;
+  border-radius: 12px / 125px;
+  box-shadow: 0 0 8px black;
+}
+
+/*button*/
+.contact-btn--outline {
+  background-color: transparent !important;
+  color: var(--secondaryColor) !important;
+  padding: 8px 20px;
+  border: 2px solid var(--secondaryColor) !important;
+  transition: all 0.3s ease-out;
+}
+
+.contact-btn--outline:hover {
+  transition: all 0.3s ease-out;
+  background: var(--secondaryColor) !important;
+  color: var(--text-secondaryColor) !important;
+  transition: 250ms;
+}
+
+@media screen and (max-width: 959px) {
+  .spacer-vertical {
+    display: none;
+  }
+
+  .contact-profile-pic {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12% 10% 0% 10% !important;
+  }
+
+  /* divider */
+
+  .h-divider {
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+    width: 80%;
+    position: relative;
+  }
+
+  .h-divider .shadow {
+    overflow: hidden;
+    height: 20px;
+    box-shadow: none !important;
+  }
+
+  .h-divider .shadow:after {
+    content: "";
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px black;
+  }
+
+  .h-divider .text {
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -33px;
+    left: 50%;
+    margin-left: -60px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #999;
+    background: white;
+  }
+
+  .h-divider .text i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed #aaa;
+    text-align: center;
+    line-height: 50px;
+    font-style: normal;
+    color: #999;
+  }
+
+  .h-divider .text2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -35px;
+    left: 48%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #999;
+    background: white;
+  }
+
+  .h-divider img {
+    position: absolute;
+    margin: 4px;
+    max-width: 60px;
+    border-radius: 100%;
+    border: 1px dashed #aaa;
+  }
+}

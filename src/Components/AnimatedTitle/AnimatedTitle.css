@@ -15,7 +15,7 @@
 .animated-letter:hover {
   color: green;
   cursor: default;
-  animation: 0.35s jumpLetter ease;
+  animation: 0.5s jumpLetter ease;
   filter: blur(0.5px);
 }
 

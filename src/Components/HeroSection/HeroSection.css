@@ -30,7 +30,6 @@
   /* width: 50vw; */
   display: grid;
   align-items: center;
-  top: 50%;
   transform: translate(0%, -50%);
 }
 
