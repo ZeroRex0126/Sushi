@@ -1,6 +1,6 @@
 .animatedBtn a {
   position: relative;
-  background: white;
+  background: transparent;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -42,7 +42,7 @@ i::after {
   position: absolute;
   width: 10px;
   height: 3px;
-  background: white;
+  background: transparent;
   transform: translateX(-50%) skewX(325deg);
   transition: 0.5s;
 }

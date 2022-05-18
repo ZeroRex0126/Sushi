@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import AnimatedBtn from "../animatedBtn/animatedBtn";
+import { AnimatedBtn, AnimatedTitle } from "../../Components";
 
 const HeroSection = () => {
   return (
@@ -16,7 +16,9 @@ const HeroSection = () => {
 
       <div className="details-container">
         <div className="heading-container">
-          <h1 className="hero-heading">Time for sushi</h1>
+          <div>
+            <AnimatedTitle title={"Time For Sushi"} animated={true} />
+          </div>
           <div className="hero-btn">
             <AnimatedBtn
               navTo={"menu"}

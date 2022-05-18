@@ -1,0 +1,62 @@
+.animated-heading {
+  font-family: "Vampiro One", cursive;
+  /* display: flex;
+    position: absolute; */
+  font-size: 90px;
+  width: 100%;
+  margin-left: 50%;
+  align-items: center;
+  transform: translate(-50%, 0%);
+}
+
+.animated-letter {
+  position: relative;
+}
+.animated-letter:hover {
+  color: green;
+  cursor: default;
+  animation: 0.35s jumpLetter ease;
+  filter: blur(0.5px);
+}
+
+@keyframes jumpLetter {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: -20px;
+  }
+  75% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@media (max-width: 888px) {
+  .animated-heading {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1055px) {
+  .animated-heading {
+    font-size: 45px !important;
+  }
+}
+
+@media (min-width: 1450px) {
+  .animated-heading {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1807px) {
+  .animated-heading {
+    font-size: 90px;
+  }
+}
