@@ -5,6 +5,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import "./ContactCard.css";
 import { Fade } from "react-reveal";
+import AnimatedBtn from "../animatedBtn/animatedBtn";
 
 const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
   const [fName, setfName] = useState("");
@@ -23,7 +24,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
       <Grid container className="contact-component-container">
         <Grid item sm={12} md={6} className="contact-details">
           <Fade left cascade>
-            <h1>~ Contacts ~</h1>
+            <h1>Contacts</h1>
             <Typography>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               sit amet dignissim diam. Donec sed arcu eget odio convallis
@@ -41,7 +42,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
         </Grid>
 
         <Grid item sm={12} md={6} className="contact-form">
-          <h1>~ Contact Us ~</h1>
+          <h1>Contact Us</h1>
           <FormProvider {...methods}>
             <Fade right cascade>
               <form
@@ -125,14 +126,14 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
                 />
                 <br />
                 <br />
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="primary"
-                  className="contact-btn--outline"
-                >
-                  Contact Us
-                </Button>
+                <AnimatedBtn
+                  title={"Contact Us"}
+                  isBtn={true}
+                  btnType={"submit"}
+                  color={{ "--btn-color": "green" }}
+                />
+                <br />
+                <br />
               </form>
             </Fade>
           </FormProvider>

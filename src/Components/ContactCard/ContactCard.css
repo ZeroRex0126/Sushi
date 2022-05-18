@@ -23,7 +23,8 @@
 }
 
 .contact-component-container h1 {
-  font-size: 25px;
+  font-size: 40px;
+  font-family: "Vampiro One", cursive;
 }
 .contact-component-container p {
   font-size: 15px;
@@ -103,7 +104,6 @@
 @media screen and (max-width: 959px) {
   .contact-component-container {
     top: 120px;
-    padding-bottom: 10vh;
     transform: translate(0%, 0%);
   }
   .spacer-vertical {
