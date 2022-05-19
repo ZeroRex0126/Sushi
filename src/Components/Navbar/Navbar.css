@@ -208,7 +208,6 @@ h1 {
   border-radius: 50px;
   line-height: 50px;
   margin: 5px 30px;
-  opacity: 0;
   transition: all 0.3s ease;
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -238,7 +237,6 @@ input[type="checkbox"] {
 
 #active:checked ~ .wrapper ul li a {
   transition: 0.5s ease;
-  opacity: 1;
 }
 .wrapper ul li a {
   transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
