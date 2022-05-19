@@ -8,13 +8,20 @@ const Navbar = () => {
       <Link className="navbar-brand navbar-logo" to="/">
         KOI SUSHI
       </Link>
-      <div
-        className="navbar-toggler"
-        onClick={() => {
-          console.log("clicked");
-        }}
-      >
-        <i className="fas fa-bars"></i>
+      <div className="hamburger-menu">
+        <input
+          type="checkbox"
+          id="checkbox1"
+          class="checkbox1 visuallyHidden"
+        />
+        <label for="checkbox1">
+          <div class="hamburger hamburger1">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+          </div>
+        </label>
       </div>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
