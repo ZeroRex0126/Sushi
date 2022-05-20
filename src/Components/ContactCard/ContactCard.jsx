@@ -117,7 +117,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
                   id="outlined-multiline-static"
                   label="Description"
                   multiline
-                  minRows={10}
+                  minRows={7}
                   fullWidth
                   value={description}
                   onChange={(e) => {

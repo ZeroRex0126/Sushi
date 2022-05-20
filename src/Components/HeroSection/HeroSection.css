@@ -63,7 +63,7 @@
   animation: 3s updown infinite ease;
 }
 
-@media (max-height: 680px) {
+@media (max-height: 400px) {
   .heading-container {
     top: 70% !important;
   }
