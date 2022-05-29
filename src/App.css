@@ -6,3 +6,75 @@
   position: fixed;
   z-index: -1;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*spinners*/
+.app-loading {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-loading-icon {
+  height: 150px !important;
+  width: 150px !important;
+  animation: spinner-grow 2s linear infinite !important;
+}
+
+.loadingText {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.remove-cart-btn-spinner {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.empty-cart-btn-spinner {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+/* shoping cart */
+.global-cart .cart-btn.container {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.global-cart .cart-btn {
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  border-radius: 0%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 50%);
+}
+
+.global-cart .item-count {
+  text-align: center;
+  position: fixed;
+  font-size: 12px;
+  top: 50px;
+  right: 65px;
+  background-color: peachpuff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
