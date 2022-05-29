@@ -54,12 +54,9 @@ const FilterButton = ({
                 ></MDBInput>
                 <h2 className="filterHeadings">Categories</h2>
                 {categories.map((category) => (
-                  <div
-                    className="custom-control custom-checkbox"
-                    key={category.id}
-                  >
+                  <div className="form-check" key={category.id}>
                     <input
-                      className="custom-control-input"
+                      className="form-check-input"
                       id={category.id}
                       value={category.slug}
                       checked={filters.includes(category.slug) ? true : false}
@@ -68,10 +65,7 @@ const FilterButton = ({
                         checkHandler(event);
                       }}
                     ></input>
-                    <label
-                      className="custom-control-label"
-                      htmlFor={category.id}
-                    >
+                    <label className="form-check-label" htmlFor={category.id}>
                       {category.name}
                     </label>
                   </div>
@@ -82,7 +76,7 @@ const FilterButton = ({
           <MDBModalFooter>
             <Button
               type="button"
-              className="btn btn-outline-dark order-btn"
+              className="btn filter-option-btn-clear"
               data-mdb-ripple-color="dark"
               onClick={clearFilter}
             >
@@ -90,11 +84,11 @@ const FilterButton = ({
             </Button>
             <Button
               type="button"
-              className="btn btn-outline-dark order-btn"
+              className="btn filter-option-btn-search"
               data-mdb-ripple-color="dark"
               onClick={toggleModal}
             >
-              close
+              Search
             </Button>
           </MDBModalFooter>
         </MDBModal>

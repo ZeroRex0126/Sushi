@@ -32,22 +32,10 @@ input[type="text"]:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 var(--primaryColor) !important;
 }
 
-/* .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: var(--primaryColor) !important;
-  border-color: black !important;
-} */
-
-/* .custom-checkbox
-  .custom-control-input:checked:focus
-  ~ .custom-control-label::before {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(51, 51, 51, 0.25);
+.form-check-input:checked {
+  background-color: green !important;
+  border-color: green !important;
 }
-.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
-}
-.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  background-color: var(--primaryColor) !important;
-} */
 
 /*Input label color*/
 .MuiInput-underline:after {
