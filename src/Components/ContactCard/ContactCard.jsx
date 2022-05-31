@@ -14,7 +14,7 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
   const [description, setDescription] = useState("");
   const methods = useForm();
   return (
-    <main>
+    <main className="contact-card-container">
       <div className="h-divider">
         <div className="shadow"></div>
         <div className="text2">
@@ -139,13 +139,6 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
           </FormProvider>
         </Grid>
       </Grid>
-      <div className="spacer-vertical left">
-        <div className="mask text2">
-          {/* <div className="vertical-bg">
-            <img src="/img/divider-img.png" />
-          </div> */}
-        </div>
-      </div>
     </main>
   );
 };

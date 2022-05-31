@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import { MDBInput } from "mdbreact";
-import { FilterButton, ProductItem } from "../Components";
+import { AnimatedTitle, FilterButton, ProductItem } from "../Components";
 
 import "../styles/MenuPage.css";
 import { Reveal } from "react-reveal";
@@ -63,7 +63,7 @@ function MenuPage({ products, categories }) {
   }
 
   return (
-    <main>
+    <main className="menu-container">
       <div className="FilterButton">
         <FilterButton
           setSearchTerm={setSearchTerm}
@@ -73,6 +73,10 @@ function MenuPage({ products, categories }) {
           categories={categories}
           checkHandler={checkHandler}
         ></FilterButton>
+      </div>
+      {/* <h1>Menu</h1> */}
+      <div className="menuHeading">
+        <AnimatedTitle title={"Menu"} animated={true} />
       </div>
       <Grid
         container
@@ -86,10 +90,7 @@ function MenuPage({ products, categories }) {
           })
           .map((product) => (
             <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
-              <ProductItem
-                product={product}
-                // onAddToCart={onAddToCart}
-              ></ProductItem>
+              <ProductItem product={product}></ProductItem>
             </Grid>
           ))}
       </Grid>

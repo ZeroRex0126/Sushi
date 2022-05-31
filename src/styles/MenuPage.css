@@ -1,9 +1,13 @@
+.menu-container {
+  position: relative;
+  top: 12vh;
+}
+
 .shoppingContainer {
   /* width: 85% !important; */
-  position: absolute;
+  position: relative;
   padding-left: 20px !important;
   padding-right: 20px !important;
-  top: 12vh;
 }
 
 .filterContainer {
@@ -26,10 +30,18 @@
   color: var(--text-primaryColor) !important;
 }
 
+.MuiGrid-spacing-xs-4 {
+  margin: 0px !important;
+}
+
+.menuHeading {
+  width: 100%;
+  text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
   .shoppingContainer {
     width: 100% !important;
-    right: 17px;
   }
 
   .filterContainer {

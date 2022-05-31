@@ -12,7 +12,7 @@ import { AddShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles";
 import { Reveal } from "react-reveal";
 
-const ProdoctItem = ({ product, onAddToCart }) => {
+const ProdoctItem = ({ product }) => {
   const classes = useStyles();
 
   return (
@@ -36,7 +36,7 @@ const ProdoctItem = ({ product, onAddToCart }) => {
             color="textSecondary"
           />
         </CardContent>
-        <CardActions disableSpacing className={classes.cardActions}>
+        {/* <CardActions disableSpacing className={classes.cardActions}>
           <IconButton
             className={classes.AddIconBtn}
             aria-label="Add to Cart"
@@ -45,7 +45,7 @@ const ProdoctItem = ({ product, onAddToCart }) => {
           >
             <AddShoppingCart></AddShoppingCart>
           </IconButton>
-        </CardActions>
+        </CardActions> */}
       </Card>
     </Reveal>
   );

@@ -1,3 +1,6 @@
+.contact-card-container {
+  height: 100vh;
+}
 .contact-component-container {
   display: flex;
   position: relative;
@@ -7,10 +10,8 @@
   text-align: center !important;
   align-items: center !important;
   width: 90% !important;
-  height: 100vh;
 }
 
-.spacer-vertical img,
 .h-divider img {
   height: 61px !important;
 }
@@ -46,51 +47,6 @@
   padding-left: 10% !important;
 }
 
-/* vertical divider */
-
-.spacer-vertical {
-  display: inline-block;
-  position: absolute;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.mask {
-  overflow: hidden;
-  width: 20px;
-  height: 600px;
-}
-
-.vertical-bg {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 40%;
-  left: -200%;
-  margin: 4px;
-  border-radius: 100%;
-  box-shadow: 0 2px 4px #999;
-  background: white;
-}
-
-.mask img {
-  position: absolute;
-  left: 2%;
-  margin: 4px;
-  max-width: 60px;
-  border-radius: 100%;
-}
-.left .mask:after {
-  content: "";
-  display: block;
-  margin-left: -20px;
-  width: 20px;
-  height: 100%;
-  border-radius: 12px / 125px;
-  box-shadow: 0 0 8px black;
-}
-
 /*button*/
 .contact-btn--outline {
   background-color: transparent !important;
@@ -108,8 +64,12 @@
 }
 
 @media screen and (max-width: 959px) {
+  .contact-card-container {
+    height: auto;
+  }
   .contact-component-container {
-    top: 120px;
+    top: 0px;
+    margin-top: 120px;
     transform: translate(0%, 0%);
   }
   .spacer-vertical {
@@ -197,11 +157,5 @@
     margin: 4px;
     max-width: 60px;
     border-radius: 100%;
-  }
-}
-
-@media (max-height: 680px) {
-  .contact-component-container {
-    height: 70vh;
   }
 }
