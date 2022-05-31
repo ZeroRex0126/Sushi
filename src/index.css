@@ -20,9 +20,9 @@
   scrollbar-width: none; /* Firefox */
 }
 
-* {
+/* * {
   z-index: 1;
-}
+} */
 
 input[type="text"]:focus:not([readonly]) + label {
   color: var(--primaryColor) !important;

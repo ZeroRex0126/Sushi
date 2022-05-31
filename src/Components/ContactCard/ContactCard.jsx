@@ -42,9 +42,9 @@ const ContactCard = ({ sendEmail, setMessageDialog, closeMessageDialog }) => {
         </Grid>
 
         <Grid item sm={12} md={6} className="contact-form">
-          <h1>Contact Us</h1>
           <FormProvider {...methods}>
             <Fade right cascade>
+              <h1>Contact Us</h1>
               <form
                 onSubmit={methods.handleSubmit(() => {
                   sendEmail(

@@ -32,7 +32,7 @@ const FilterButton = ({
   return (
     <div>
       <div className="filter-btn-container">
-        <Reveal effect="fadeInLeft">
+        <Reveal effect="fadeInRight">
           <button className="filter-btn" onClick={toggleModal}>
             <i className="fa-solid fa-filter"></i>
           </button>

@@ -10,22 +10,6 @@
   padding-right: 20px !important;
 }
 
-.filterContainer {
-  display: flex;
-  flex-direction: column;
-  width: 13%;
-  position: fixed;
-  left: 20px;
-  top: 12vh;
-  padding-right: 20px;
-  border-right: inset;
-  height: 85vh;
-}
-
-.filterHeadings {
-  text-align: center;
-  font-size: calc(20px + 0.361vw - 3.46921px) !important;
-}
 .materialInput {
   color: var(--text-primaryColor) !important;
 }
