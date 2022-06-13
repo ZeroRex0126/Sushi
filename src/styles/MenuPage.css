@@ -14,13 +14,18 @@
   color: var(--text-primaryColor) !important;
 }
 
-.MuiGrid-spacing-xs-4 {
-  margin: 0px !important;
-}
-
 .menuHeading {
   width: 100%;
   text-align: center;
+}
+
+.menu-container .MuiGrid-spacing-xs-4 {
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.menu-container .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+  padding: 30px !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -31,6 +36,11 @@
   .filterContainer {
     width: 0%;
     display: none !important;
+  }
+
+  .menu-container .MuiGrid-spacing-xs-4 {
+    margin: 0px !important;
+    margin-top: 30px !important;
   }
 }
 
