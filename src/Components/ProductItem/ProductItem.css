@@ -1,0 +1,87 @@
+.card-container .card {
+  position: relative;
+  width: 100%;
+  /* height: 190px; */
+  height: 450px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px black;
+  transition: 0.5s;
+}
+
+/* .card-container .card:hover {
+  height: 450px;
+} */
+
+.card-container .imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  /* width: 150px;
+  height: 150px; */
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px black;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* .card-container .card:hover .imgBx {
+  width: 250px;
+  height: 250px;
+} */
+
+.card-container .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card .content .details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5ms;
+}
+
+.card .content .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card .content .details .description h3 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.card .content .details .price h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.2em;
+}
