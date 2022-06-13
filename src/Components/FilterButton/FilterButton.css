@@ -29,6 +29,10 @@
   border: 2px solid green !important;
 }
 
+.filter-btn-container .modal-body {
+  overflow: auto;
+}
+
 @media screen and (min-width: 576px) {
   .filterModal {
     max-width: 60% !important;
